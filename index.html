@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/night.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>GCP Progress</h2>
+          <p>Ramiro Leal-Cavazos</p>
+        </section>
+        <section data-markdown="slides/outline.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+        <section data-markdown="slides/cmakeSettings.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+        <section data-markdown="slides/commandTask.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+        <section data-markdown="slides/smurfParser.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+        <section data-markdown="slides/testingFramework.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+        <section data-markdown="slides/future.md"
+                 data-separator-vertical="^\r?\n\*\*\*\r?\n$">
+        </section>
+      </div>
+    </div>
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+          hash: true,
+          width: 1280,
+          height: 800,
+          slideNumber: true,
+
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
+      });
+    </script>
+  </body>
+</html>
